@@ -1,38 +1,3 @@
-// import React from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import { useCompareStore } from '../../store/useStore';
-
-// export const FloatingCompare: React.FC = () => {
-//   const count = useCompareStore((s) => s.getCount());
-//   const clear = useCompareStore((s) => s.clear);
-//   const navigate = useNavigate();
-
-//   if (count === 0) return null;
-
-//   return (
-//     <div className="fixed bottom-5 right-5 z-50 flex items-center gap-2">
-//       <button
-//         onClick={() => {
-//           if (window.confirm('Clear compare list?')) clear();
-//         }}
-//         className="bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 px-3 py-2 rounded-full shadow text-sm"
-//         title="Clear compare list"
-//       >
-//         Clear
-//       </button>
-//       <button
-//         onClick={() => navigate('/compare')}
-//         className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-3 rounded-full shadow-lg text-sm font-semibold"
-//       >
-//         Compare ({count})
-//       </button>
-//     </div>
-//   );
-// };
-
-
-
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCompareStore } from '../../store/useStore';

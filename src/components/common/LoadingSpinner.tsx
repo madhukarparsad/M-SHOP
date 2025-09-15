@@ -1,78 +1,8 @@
-// import React from 'react';
-
-// interface LoadingSpinnerProps {
-//   size?: 'sm' | 'md' | 'lg';
-//   className?: string;
-// }
-
-// export const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({ 
-//   size = 'md', 
-//   className = '' 
-// }) => {
-//   const sizeClasses = {
-//     sm: 'w-4 h-4',
-//     md: 'w-8 h-8',
-//     lg: 'w-12 h-12'
-//   };
-
-//   return (
-//     <div className={`flex items-center justify-center ${className}`}>
-//       <div className={`${sizeClasses[size]} animate-spin rounded-full border-2 border-gray-200 border-t-sky-500`} />
-//     </div>
-//   );
-// };
-
-// export const LoadingSkeleton: React.FC<{ className?: string }> = ({ className = '' }) => {
-//   return (
-//     <div className={`animate-pulse ${className}`}>
-//       <div className="bg-gray-200 rounded-lg h-4 mb-2"></div>
-//       <div className="bg-gray-200 rounded-lg h-4 mb-2 w-3/4"></div>
-//       <div className="bg-gray-200 rounded-lg h-4 w-1/2"></div>
-//     </div>
-//   );
-// };
-
-// export const ProductCardSkeleton: React.FC = () => {
-//   return (
-//     <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-//       {/* Image skeleton */}
-//       <div className="aspect-square bg-gray-200 animate-pulse"></div>
-      
-//       {/* Content skeleton */}
-//       <div className="p-3 space-y-2">
-//         <div className="space-y-1">
-//           <div className="bg-gray-200 h-3 rounded animate-pulse"></div>
-//           <div className="bg-gray-200 h-3 rounded w-2/3 animate-pulse"></div>
-//         </div>
-        
-//         {/* Rating skeleton */}
-//         <div className="flex items-center gap-1">
-//           {[...Array(5)].map((_, i) => (
-//             <div key={i} className="w-3 h-3 bg-gray-200 rounded animate-pulse"></div>
-//           ))}
-//           <div className="ml-1 bg-gray-200 h-3 w-6 rounded animate-pulse"></div>
-//         </div>
-        
-//         {/* Price skeleton */}
-//         <div className="bg-gray-200 h-4 w-16 rounded animate-pulse"></div>
-        
-//         {/* Button skeleton */}
-//         <div className="bg-gray-200 h-8 rounded animate-pulse"></div>
-//       </div>
-//     </div>
-//   );
-// };
-
-
-
-
-
-
 import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Star, StarHalf, Search, X } from 'lucide-react';
 
-// ==================== LOADING COMPONENTS ====================
+
 
 interface LoadingSpinnerProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
